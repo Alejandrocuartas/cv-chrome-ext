@@ -8,6 +8,7 @@ export default defineBackground(() => {
         chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
           // @ts-ignore
           chrome.tabs.sendMessage(tabs[0].id, { authorize: true }, function (response) {
+            alert("Response: " + response);
             // @ts-ignore
             sendResponse(response);
           });
