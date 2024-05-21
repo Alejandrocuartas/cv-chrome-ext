@@ -2,6 +2,14 @@
 
 Welcome to the CV Chrome Extension project! This extension allows you to resume any LinkedIn profile by generating a PDF with all the resume. Follow the steps below to get started.
 
+## Requirements
+
+Before you begin, ensure you have met the following requirements:
+
+- You have installed [Node.js](https://nodejs.org/) >= 18.x and [npm](https://www.npmjs.com/).
+- You have a Git client installed. You can download it from [git-scm.com](https://git-scm.com/).
+- You are using a Chrome browser to run the extension.
+
 ## Installation
 
 To set up the project locally, follow these steps:
