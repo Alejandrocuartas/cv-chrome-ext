@@ -2,7 +2,7 @@
   "name": "cv-chrome-ext",
   "description": "Chrome extension for CV",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Alejandro Cuartas <cuartasmarin734@gmail.com>",
   "type": "module",
   "scripts": {

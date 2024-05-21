@@ -7,7 +7,7 @@ export default defineConfig({
     plugins: [react()],
   }),
   manifest: {
-    permissions: ['tabs', 'storage', 'activeTab'],
+    permissions: ['tabs', 'activeTab'],
     name: 'CV Generator',
   }
 });
