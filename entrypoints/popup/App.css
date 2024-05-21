@@ -38,3 +38,15 @@
 .card {
   padding: 2em;
 }
+
+input {
+  padding: 0.5em;
+  margin: 0.5em;
+  border-style: none;
+}
+
+input:focus,
+input:hover {
+  border-style: none;
+  outline: none;
+}

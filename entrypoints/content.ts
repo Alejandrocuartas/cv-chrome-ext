@@ -39,7 +39,11 @@ export default defineContentScript({
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify({ html_s3_key: getS3Key(signedURL) })
+          body: JSON.stringify({
+            html_s3_key: getS3Key(signedURL),
+            profile_url: window.location.href,
+            email_to: request.email,
+          })
         })
           .then(response => response.json())
           .then(data => {
@@ -49,7 +53,7 @@ export default defineContentScript({
               return;
             }
 
-            alert("CV generated successfully. Check your email!");
+            browser.runtime.sendMessage({ success: true })
           })
       }
     );

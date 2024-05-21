@@ -8,5 +8,6 @@ export default defineConfig({
   }),
   manifest: {
     permissions: ['tabs', 'storage', 'activeTab'],
+    name: 'CV Generator',
   }
 });
